@@ -1,3 +1,14 @@
+# BorderTypes
+BORDER_CONSTANT: int
+BORDER_REPLICATE: int
+BORDER_REFLECT: int
+BORDER_WRAP: int
+BORDER_REFLECT_101: int
+BORDER_TRANSPARENT: int
+BORDER_REFLECT101: int
+BORDER_DEFAULT: int
+BORDER_ISOLATED: int
+
 # Color conversion codes
 COLOR_BGR2GRAY: int
 COLOR_BGR2RGB: int
@@ -49,6 +60,16 @@ FILLED: int
 LINE_4: int  # 4-connected line
 LINE_8: int  # 8-connected line
 LINE_AA: int  # Antialiased line
+
+# ThresholdTypes
+THRESH_BINARY: int
+THRESH_BINARY_INV: int
+THRESH_TRUNC: int
+THRESH_TOZERO: int
+THRESH_TOZERO_INV: int
+THRESH_MASK: int
+THRESH_OTSU: int
+THRESH_TRIANGLE: int
 
 # WindowFlags
 WINDOW_NORMAL: int # The user can resize the window (no constraint) / also use to switch a fullscreen window to a normal size.
