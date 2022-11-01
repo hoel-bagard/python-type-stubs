@@ -1,11 +1,13 @@
-import numpy as np
 from typing import Literal, Sequence
-from ._typing import *
-from .transforms import Bbox, Transform
-from .path import Path
+
+import numpy as np
+
 from ._enums import CapStyle, JoinStyle
+from ._typing import *
+from .artist import allow_rasterization, Artist
 from .backend_bases import MouseEvent, RendererBase
-from .artist import Artist, allow_rasterization
+from .path import Path
+from .transforms import Bbox, Transform
 
 class Patch(Artist):
 

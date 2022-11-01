@@ -1,8 +1,10 @@
-import numpy as np
 from typing import Literal, overload
+
+import numpy as np
 from matplotlib._typing import *
-from .trifinder import TriFinder
+
 from .triangulation import Triangulation
+from .trifinder import TriFinder
 
 __all__ = ("TriInterpolator", "LinearTriInterpolator", "CubicTriInterpolator")
 

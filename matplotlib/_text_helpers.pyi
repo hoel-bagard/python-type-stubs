@@ -1,6 +1,5 @@
 from typing import Generator
 
-
 LayoutItem = ...
 
 def warn_on_missing_glyph(codepoint: int) -> None: ...

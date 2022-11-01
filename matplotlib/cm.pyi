@@ -1,7 +1,7 @@
+from collections.abc import Mapping
+
 from ._typing import *
 from .colors import Colormap, Normalize
-
-from collections.abc import Mapping
 
 class __getattr__:
     LUTSIZE = ...

@@ -1,24 +1,20 @@
 import datetime
-from .cbook import CallbackRegistry
-from .transforms import Bbox, Transform
-import numpy as np
+from datetime import timezone
 from typing import Any, Callable, Literal, Type
-from .text import Text
-from .backend_bases import MouseEvent
-from .lines import Line2D
-from .axes import Axes
-from .artist import Artist, allow_rasterization
 
+import numpy as np
 from units.basic_units import BasicUnit
 
-from .backend_bases import RendererBase
-from datetime import timezone
+from .artist import allow_rasterization, Artist
+from .axes import Axes
+from .backend_bases import MouseEvent, RendererBase
 from .backends.backend_mixed import MixedModeRenderer
+from .cbook import CallbackRegistry
+from .lines import Line2D
 from .patches import Patch
-from .ticker import (
-    Formatter,
-    Locator,
-)
+from .text import Text
+from .ticker import Formatter, Locator
+from .transforms import Bbox, Transform
 
 GRIDLINE_INTERPOLATION_STEPS: int = ...
 

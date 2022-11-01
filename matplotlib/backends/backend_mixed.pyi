@@ -1,6 +1,6 @@
+from matplotlib._typing import Scalar
 from matplotlib.backend_bases import RendererBase
 from matplotlib.figure import Figure
-from matplotlib._typing import Scalar
 
 class MixedModeRenderer:
     def __init__(

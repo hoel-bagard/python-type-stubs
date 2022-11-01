@@ -1,4 +1,5 @@
 import numpy as np
+
 from .triangulation import Triangulation
 
 class TriAnalyzer:

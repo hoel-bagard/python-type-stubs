@@ -1,20 +1,13 @@
-from matplotlib.transforms import Bbox
-import numpy as np
-from matplotlib._typing import *
-from matplotlib.text import Text
-from matplotlib.font_manager import FontProperties
+import threading
 from io import BufferedWriter, BytesIO
-from matplotlib.font_manager import FontProperties
 from typing import Any, Tuple
 
-import threading
-from matplotlib.backend_bases import (
-    FigureCanvasBase,
-    FigureManagerBase,
-    GraphicsContextBase,
-    RendererBase,
-    _Backend,
-)
+import numpy as np
+from matplotlib._typing import *
+from matplotlib.backend_bases import _Backend, FigureCanvasBase, FigureManagerBase, GraphicsContextBase, RendererBase
+from matplotlib.font_manager import FontProperties
+from matplotlib.text import Text
+from matplotlib.transforms import Bbox
 
 backend_version: str = ...
 

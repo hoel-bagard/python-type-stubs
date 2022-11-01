@@ -1,7 +1,8 @@
 from typing import Literal
+
+from .figure import Figure
 from .gridspec import SubplotSpec
 from .transforms import Bbox
-from .figure import Figure
 
 class LayoutGrid:
     def __init__(

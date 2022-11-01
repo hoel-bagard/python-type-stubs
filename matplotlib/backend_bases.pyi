@@ -1,21 +1,22 @@
-from matplotlib._api import classproperty
-from .backend_managers import ToolManager
-from .texmanager import TexManager
-from .widgets import Cursor, LockDraw
-from typing import Any, Callable, Literal
-from ._typing import *
-from .transforms import Affine2DBase, Bbox, Transform, TransformedPath
-from .text import Text
-from .path import Path
-from ._enums import CapStyle, JoinStyle
-from .backend_tools import Cursors
-from .font_manager import FontProperties
-from .figure import Figure
-from .axes import Axes
-from .artist import Artist
-
 from enum import Enum, IntEnum
+from typing import Any, Callable, Literal
+
+from matplotlib._api import classproperty
+
 from . import backend_tools as tools
+from ._enums import CapStyle, JoinStyle
+from ._typing import *
+from .artist import Artist
+from .axes import Axes
+from .backend_managers import ToolManager
+from .backend_tools import Cursors
+from .figure import Figure
+from .font_manager import FontProperties
+from .path import Path
+from .texmanager import TexManager
+from .text import Text
+from .transforms import Affine2DBase, Bbox, Transform, TransformedPath
+from .widgets import Cursor, LockDraw
 
 def register_backend(format: str, backend, description: str = ...): ...
 def get_registered_canvas_class(format): ...

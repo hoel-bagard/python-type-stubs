@@ -1,45 +1,37 @@
 import datetime
 from re import L
-from matplotlib.backend_tools import Cursors
-from matplotlib.contour import QuadContourSet
+from typing import Callable, Literal, overload, Sequence
+
 import numpy as np
-from typing import Callable, Literal, Sequence, overload
 from matplotlib._typing import *
-from matplotlib.transforms import Bbox, BboxTransformTo, Transform
-from matplotlib.text import Annotation, Text
-from matplotlib.container import BarContainer, ErrorbarContainer, StemContainer
-from matplotlib.patches import FancyArrow, Polygon, Rectangle, StepPatch, Wedge
-from matplotlib.quiver import Barbs, Quiver
-from matplotlib.colors import Colormap, Normalize
+from matplotlib.artist import Artist
 from matplotlib.axes._secondary_axes import SecondaryAxis
-from matplotlib.collections import (
-    EventCollection,
-    LineCollection,
-    BrokenBarHCollection,
-    PathCollection,
-    PolyCollection,
-    Collection,
-    QuadMesh,
-)
-from matplotlib.lines import Line2D
-from matplotlib.legend import Legend
-from matplotlib.markers import MarkerStyle
-from matplotlib.ticker import Formatter
+from matplotlib.axis import XAxis, YAxis
+from matplotlib.backend_tools import Cursors
+from matplotlib.collections import (BrokenBarHCollection, Collection, EventCollection, LineCollection, PathCollection,
+                                    PolyCollection, QuadMesh)
+from matplotlib.colors import Colormap, Normalize
+from matplotlib.container import BarContainer, ErrorbarContainer, StemContainer
+from matplotlib.contour import QuadContourSet
 from matplotlib.figure import Figure
 from matplotlib.image import AxesImage, PcolorImage
-from matplotlib.axis import XAxis, YAxis
-from matplotlib.artist import Artist
+from matplotlib.legend import Legend
+from matplotlib.lines import Line2D
+from matplotlib.markers import MarkerStyle
+from matplotlib.patches import FancyArrow, Polygon, Rectangle, StepPatch, Wedge
+from matplotlib.quiver import Barbs, Quiver
 from matplotlib.spines import Spines
+from matplotlib.table import table as table_table
+from matplotlib.text import Annotation, Text
+from matplotlib.ticker import Formatter
+from matplotlib.transforms import Bbox, BboxTransformTo, Transform
+from matplotlib.tri import tricontour as tri_tricontour
+from matplotlib.tri import tricontour as tri_tricontourf
+from matplotlib.tri import tripcolor as tri_tripcolor
+from matplotlib.tri import triplot as tri_triplot
+
 from ._base import _AxesBase
 
-from matplotlib.table import table as table_table
-from matplotlib.tri import \
-    tricontour as tri_tricontour, \
-    tricontour as tri_tricontourf, \
-    tripcolor as tri_tripcolor, \
-    triplot as tri_triplot
-
-    
 class Axes(_AxesBase):
 
     dataLim: Bbox

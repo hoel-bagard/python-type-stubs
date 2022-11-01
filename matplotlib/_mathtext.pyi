@@ -1,10 +1,12 @@
-from sre_parse import State
-from tkinter.tix import HList
-from matplotlib.mathtext import MathtextBackend
-from typing import Literal
-from .font_manager import FontProperties
 import enum
 import functools
+from sre_parse import State
+from tkinter.tix import HList
+from typing import Literal
+
+from matplotlib.mathtext import MathtextBackend
+
+from .font_manager import FontProperties
 
 def get_unicode_index(symbol: str, math: bool = True) -> int: ...
 

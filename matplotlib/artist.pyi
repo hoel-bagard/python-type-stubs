@@ -1,12 +1,13 @@
 from typing import Any, Callable, NamedTuple
+
 from ._typing import *
-from .backend_bases import RendererBase, MouseEvent
-from .patches import Circle, Patch, Rectangle, RegularPolygon
-from .figure import Figure
-from .transforms import Bbox, Transform
 from .axes import Axes
+from .backend_bases import MouseEvent, RendererBase
+from .figure import Figure
+from .patches import Circle, Patch, Rectangle, RegularPolygon
 from .path import Path
 from .patheffects import AbstractPathEffect
+from .transforms import Bbox, Transform
 
 def allow_rasterization(
     draw,

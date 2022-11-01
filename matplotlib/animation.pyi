@@ -1,13 +1,11 @@
-from typing import Callable, Generator, Iterable, Iterator
-
-from matplotlib.backend_bases import NonGuiException
-from .figure import Figure
-
-from itertools import count
-from typing import Callable, List
-
 import abc
 import contextlib
+from itertools import count
+from typing import Callable, Generator, Iterable, Iterator, List
+
+from matplotlib.backend_bases import NonGuiException
+
+from .figure import Figure
 
 subprocess_creation_flags = ...
 

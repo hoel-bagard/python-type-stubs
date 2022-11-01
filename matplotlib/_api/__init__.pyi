@@ -1,9 +1,7 @@
+import functools
 from typing import Any, Callable, Generator, Iterable, Type
 
-import functools
-from .deprecation import (
-    MatplotlibDeprecationWarning,
-)
+from .deprecation import MatplotlibDeprecationWarning
 
 class classproperty:
     def __init__(

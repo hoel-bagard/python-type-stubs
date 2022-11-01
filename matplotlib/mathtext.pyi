@@ -1,7 +1,7 @@
+from types import SimpleNamespace
+
 from ._typing import *
 from .font_manager import FontProperties
-
-from types import SimpleNamespace
 
 get_unicode_index = ...
 

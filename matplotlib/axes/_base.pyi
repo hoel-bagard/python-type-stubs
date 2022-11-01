@@ -1,20 +1,21 @@
+from typing import Any, Callable, Collection, Literal, MutableSequence, overload, Sequence
+
+import numpy as np
+from matplotlib._typing import *
+from matplotlib.artist import allow_rasterization, Artist
 from matplotlib.axis import XAxis, YAxis
+from matplotlib.backend_bases import MouseButton, MouseEvent, RendererBase
 from matplotlib.cbook import Grouper
+from matplotlib.container import Container
+from matplotlib.figure import Figure
 from matplotlib.image import AxesImage
 from matplotlib.legend import Legend
-from matplotlib.table import Table
-import numpy as np
-from typing import Any, Callable, Collection, Literal, MutableSequence, Sequence, overload
-from matplotlib._typing import *
-from matplotlib.transforms import Bbox, BboxBase, Transform, TransformedBbox
-from matplotlib.backend_bases import RendererBase
-from matplotlib.patches import Patch
-from matplotlib.backend_bases import MouseButton, MouseEvent
-from matplotlib.container import Container
 from matplotlib.lines import Line2D
-from matplotlib.figure import Figure
+from matplotlib.patches import Patch
 from matplotlib.scale import ScaleBase
-from matplotlib.artist import Artist, allow_rasterization
+from matplotlib.table import Table
+from matplotlib.transforms import Bbox, BboxBase, Transform, TransformedBbox
+
 from ._axes import Axes
 
 class _axis_method_wrapper:

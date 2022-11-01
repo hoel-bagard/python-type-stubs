@@ -1,11 +1,12 @@
-from matplotlib.widgets import Cursor
-from typing import Any
-from .backend_bases import Event, MouseEvent, ToolContainerBase
-from .figure import Figure
-from .axes import Axes
-from .backend_managers import ToolManager
-
 import enum
+from typing import Any
+
+from matplotlib.widgets import Cursor
+
+from .axes import Axes
+from .backend_bases import Event, MouseEvent, ToolContainerBase
+from .backend_managers import ToolManager
+from .figure import Figure
 
 class Cursors(enum.IntEnum):
 

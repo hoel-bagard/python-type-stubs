@@ -1,8 +1,9 @@
-from .scale import SymmetricalLogTransform
+from functools import partial
 from typing import Any, Callable, Literal, Sequence
+
 from ._typing import *
 from .axis import Axis
-from functools import partial
+from .scale import SymmetricalLogTransform
 
 __all__ = (
     "TickHelper",

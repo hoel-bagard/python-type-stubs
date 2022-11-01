@@ -1,7 +1,8 @@
 from typing import Any, Callable, Literal, Sequence
+
 from ._typing import *
-from .transforms import Transform
 from .axis import Axis
+from .transforms import Transform
 
 class ScaleBase:
     def __init__(self, axis: Axis) -> None: ...

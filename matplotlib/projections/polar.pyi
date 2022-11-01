@@ -1,15 +1,15 @@
-from matplotlib.path import Path
-import numpy as np
 from typing import Literal, Sequence, Type
+
+import numpy as np
 from matplotlib._typing import *
-from matplotlib.transforms import Affine2DBase, ScaledTranslation, Transform
-from matplotlib.text import Text
-from matplotlib.backend_bases import MouseButton
-from matplotlib.lines import Line2D
-from matplotlib.transforms import Bbox
 from matplotlib.axes import Axes
 from matplotlib.axis import Axis, XTick, YTick
+from matplotlib.backend_bases import MouseButton
+from matplotlib.lines import Line2D
+from matplotlib.path import Path
+from matplotlib.text import Text
 from matplotlib.ticker import Formatter, Locator
+from matplotlib.transforms import Affine2DBase, Bbox, ScaledTranslation, Transform
 
 class PolarTransform(Transform):
 

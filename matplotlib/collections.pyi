@@ -1,16 +1,17 @@
 from tkinter.messagebox import NO
+from typing import Callable, Literal, Sequence
+
+import numpy as np
+from matplotlib._enums import CapStyle, JoinStyle
+from matplotlib._typing import *
+from matplotlib.artist import allow_rasterization, Artist
+from matplotlib.backend_bases import Event, MouseEvent
+from matplotlib.cm import ScalarMappable
 from matplotlib.colors import Colormap, Normalize
 from matplotlib.lines import Line2D
 from matplotlib.patches import Patch
 from matplotlib.path import Path
-import numpy as np
-from typing import Callable, Literal, Sequence
-from matplotlib._typing import *
 from matplotlib.transforms import Bbox, Transform
-from matplotlib.cm import ScalarMappable
-from matplotlib.backend_bases import Event, MouseEvent
-from matplotlib._enums import CapStyle, JoinStyle
-from matplotlib.artist import Artist, allow_rasterization
 
 class Collection(Artist, ScalarMappable):
     _transforms: np.ndarray = ...

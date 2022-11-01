@@ -1,13 +1,15 @@
-from matplotlib.markers import MarkerStyle
-import numpy as np
 from typing import Any, Callable, Literal, Sequence
-from ._typing import *
-from .transforms import Bbox, Transform
-from .path import Path
-from .backend_bases import Event, MouseEvent, RendererBase
+
+import numpy as np
+from matplotlib.markers import MarkerStyle
+
 from ._enums import CapStyle, JoinStyle
-from .artist import Artist, allow_rasterization
+from ._typing import *
+from .artist import allow_rasterization, Artist
+from .backend_bases import Event, MouseEvent, RendererBase
 from .backends.backend_agg import RendererAgg
+from .path import Path
+from .transforms import Bbox, Transform
 
 def segment_hits(cx, cy, x, y, radius): ...
 

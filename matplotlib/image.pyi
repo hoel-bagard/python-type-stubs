@@ -1,15 +1,16 @@
-import numpy as np
 from typing import Literal, Sequence
-from ._typing import *
-from .cm import ScalarMappable
-from .backend_bases import MouseEvent, RendererBase
-from .figure import Figure
-from .colors import Colormap, Normalize
-from .transforms import Bbox
-from .axes import Axes
-from .artist import Artist, allow_rasterization
-from .transforms import Affine2D
+
+import numpy as np
 from PIL.Image import Image
+
+from ._typing import *
+from .artist import allow_rasterization, Artist
+from .axes import Axes
+from .backend_bases import MouseEvent, RendererBase
+from .cm import ScalarMappable
+from .colors import Colormap, Normalize
+from .figure import Figure
+from .transforms import Affine2D, Bbox
 
 interpolations_names = ...
 

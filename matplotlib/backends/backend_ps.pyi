@@ -1,14 +1,13 @@
+from enum import Enum
 from typing import Type
+
 from matplotlib._typing import *
-from matplotlib.transforms import Transform
-from matplotlib.text import Text
 from matplotlib.backend_bases import _Backend, FigureCanvasBase, FigureManagerBase, GraphicsContextBase
 from matplotlib.font_manager import FontProperties
-from matplotlib.transforms import Affine2DBase
-
-from enum import Enum
-
+from matplotlib.text import Text
+from matplotlib.transforms import Affine2DBase, Transform
 from traitlets import Int
+
 from . import _backend_pdf_ps
 
 backend_version: str = ...

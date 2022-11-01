@@ -1,12 +1,13 @@
-from email.errors import NonPrintableDefect
-from re import Pattern
-from .scale import AsinhScale, FuncScale, LogScale, SymmetricalLogScale
-import numpy as np
-from typing import Callable, Iterator, Literal
-from matplotlib._typing import *
-
 import functools
 from collections.abc import Mapping
+from email.errors import NonPrintableDefect
+from re import Pattern
+from typing import Callable, Iterator, Literal
+
+import numpy as np
+from matplotlib._typing import *
+
+from .scale import AsinhScale, FuncScale, LogScale, SymmetricalLogScale
 
 class _ColorMapping(dict):
     def __init__(self, mapping) -> None: ...

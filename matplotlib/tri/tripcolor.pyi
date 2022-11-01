@@ -1,4 +1,5 @@
 from typing import Literal
+
 from matplotlib._typing import *
 from matplotlib.axes import Axes
 

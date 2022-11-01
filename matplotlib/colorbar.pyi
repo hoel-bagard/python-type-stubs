@@ -1,15 +1,17 @@
 from typing import Literal, Sequence, Type
+
 from libcst import For
-from .backend_bases import RendererBase
-from .gridspec import SubplotSpec
-from .text import Text
-from .cm import ScalarMappable
-from .colors import Colormap, Normalize
-from .collections import LineCollection
-from .ticker import Formatter, Locator
+
 from .axes import Axes
 from .axis import Tick
+from .backend_bases import RendererBase
+from .cm import ScalarMappable
+from .collections import LineCollection
+from .colors import Colormap, Normalize
+from .gridspec import SubplotSpec
 from .spines import Spine
+from .text import Text
+from .ticker import Formatter, Locator
 
 class _ColorbarSpine(Spine):
     def __init__(self, axes) -> None: ...

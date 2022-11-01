@@ -1,8 +1,10 @@
 import datetime
-from .units import ConversionInterface
+
 import numpy as np
 from dateutil import rrule
+
 from .ticker import Formatter, Locator
+from .units import ConversionInterface
 
 UTC: datetime.timezone = ...
 EPOCH_OFFSET: float = ...

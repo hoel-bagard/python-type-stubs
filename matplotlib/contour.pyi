@@ -1,13 +1,15 @@
 from tkinter import Label
-from matplotlib.collections import Collection
 from typing import Callable, Iterable, Literal, Sequence
+
+from matplotlib.collections import Collection
+
 from ._typing import *
-from .transforms import Transform
-from .text import Text
-from .cm import ScalarMappable
-from .ticker import Formatter
-from .axes import Axes
 from .artist import Artist
+from .axes import Axes
+from .cm import ScalarMappable
+from .text import Text
+from .ticker import Formatter
+from .transforms import Transform
 
 class ClabelText(Text):
     def get_rotation(self) -> float: ...

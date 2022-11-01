@@ -1,13 +1,14 @@
-from .colors import Colormap, Normalize
 from typing import Any, Callable, Literal, Sequence
+
 from ._typing import *
-from .transforms import Bbox, BboxBase, Transform
-from .text import _AnnotationBase
-from .backend_bases import Event, MouseEvent, RendererBase
-from .patches import FancyBboxPatch
-from .font_manager import FontProperties
-from .figure import Figure
 from .artist import Artist
+from .backend_bases import Event, MouseEvent, RendererBase
+from .colors import Colormap, Normalize
+from .figure import Figure
+from .font_manager import FontProperties
+from .patches import FancyBboxPatch
+from .text import _AnnotationBase
+from .transforms import Bbox, BboxBase, Transform
 
 DEBUG = ...
 

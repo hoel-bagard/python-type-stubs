@@ -1,10 +1,11 @@
 from typing import Sequence
-from matplotlib.path import Path
-from matplotlib.transforms import Transform
-from matplotlib.backend_bases import MouseButton
-from matplotlib.ticker import Formatter
-from matplotlib.axes import Axes
+
 import numpy as np
+from matplotlib.axes import Axes
+from matplotlib.backend_bases import MouseButton
+from matplotlib.path import Path
+from matplotlib.ticker import Formatter
+from matplotlib.transforms import Transform
 
 class GeoAxes(Axes):
     class ThetaFormatter(Formatter):

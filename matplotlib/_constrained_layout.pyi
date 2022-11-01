@@ -1,6 +1,7 @@
 from matplotlib.backend_bases import RendererBase
-from .figure import Figure
+
 from .axes import Axes
+from .figure import Figure
 from .transforms import Bbox
 
 def do_constrained_layout(

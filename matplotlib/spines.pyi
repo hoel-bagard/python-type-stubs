@@ -1,17 +1,16 @@
-from .backend_bases import RendererBase
-from .transforms import Transform
-from typing import Sequence
-from ._typing import *
-from .path import Path
-from .patches import Patch
-from .axis import Axis, XAxis, YAxis
-from .axes import Axes
-
 from collections import OrderedDict
-from functools import partial
-
 from collections.abc import MutableMapping
+from functools import partial
+from typing import Sequence
+
+from ._typing import *
 from .artist import allow_rasterization
+from .axes import Axes
+from .axis import Axis, XAxis, YAxis
+from .backend_bases import RendererBase
+from .patches import Patch
+from .path import Path
+from .transforms import Transform
 
 class Spine(Patch):
     def __str__(self) -> str: ...

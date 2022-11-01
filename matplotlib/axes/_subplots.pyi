@@ -1,5 +1,5 @@
-from matplotlib.gridspec import GridSpec, SubplotSpec
 from matplotlib.figure import Figure
+from matplotlib.gridspec import GridSpec, SubplotSpec
 
 class SubplotBase:
     def __init__(self, fig: Figure, *args, **kwargs) -> None: ...

@@ -1,9 +1,10 @@
-import numpy as np
+from functools import lru_cache
 from typing import Sequence
+
+import numpy as np
+
 from ._typing import *
 from .transforms import Affine2D, Bbox, Transform
-
-from functools import lru_cache
 
 class Path:
 

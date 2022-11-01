@@ -1,7 +1,8 @@
 import numpy as np
 from matplotlib._typing import *
-from .triinterpolate import TriInterpolator
+
 from .triangulation import Triangulation
+from .triinterpolate import TriInterpolator
 
 class TriRefiner:
     def __init__(self, triangulation: Triangulation) -> None: ...

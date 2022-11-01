@@ -1,17 +1,12 @@
-from typing import Any, Type
-from matplotlib._typing import *
-from matplotlib.text import Text
-from matplotlib.font_manager import FontProperties
-from matplotlib.transforms import Affine2DBase, Transform
-from matplotlib.backend_bases import (
-    FigureCanvasBase,
-    FigureManagerBase,
-    GraphicsContextBase,
-    RendererBase,
-    _Backend,
-)
 from encodings.utf_8 import StreamWriter
 from io import BytesIO, TextIOWrapper
+from typing import Any, Type
+
+from matplotlib._typing import *
+from matplotlib.backend_bases import _Backend, FigureCanvasBase, FigureManagerBase, GraphicsContextBase, RendererBase
+from matplotlib.font_manager import FontProperties
+from matplotlib.text import Text
+from matplotlib.transforms import Affine2DBase, Transform
 
 backend_version = ...
 

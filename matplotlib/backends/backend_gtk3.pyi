@@ -1,14 +1,12 @@
 from typing import Callable, Type
+
+from gi.repository import Gtk
 from matplotlib import backend_tools
 from matplotlib._api import classproperty
 from matplotlib.backend_bases import FigureCanvasBase, ToolContainerBase
-from gi.repository import Gtk
-from ._backend_gtk import (
-    TimerGTK as TimerGTK3,
-    _BackendGTK,
-    _FigureManagerGTK,
-    _NavigationToolbar2GTK,
-)
+
+from ._backend_gtk import _BackendGTK, _FigureManagerGTK, _NavigationToolbar2GTK
+from ._backend_gtk import TimerGTK as TimerGTK3
 
 class __getattr__:
     @property

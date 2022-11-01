@@ -1,8 +1,10 @@
-from matplotlib.widgets import LockDraw
 from typing import Callable
+
+from matplotlib.widgets import LockDraw
+
+from .backend_bases import Event, FigureCanvasBase
 from .backend_tools import ToolBase
 from .figure import Figure
-from .backend_bases import Event, FigureCanvasBase
 
 class ToolEvent:
     def __init__(self, name: str, sender, tool, data=...) -> None: ...

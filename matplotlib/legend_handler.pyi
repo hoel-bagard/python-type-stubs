@@ -1,12 +1,12 @@
-from typing import Callable, Sequence
-from .patches import Rectangle
-from .offsetbox import OffsetBox
-from .lines import Line2D
-from .legend import Legend
-from .container import BarContainer
-from .artist import Artist
-
 from collections.abc import Sequence
+from typing import Callable, Sequence
+
+from .artist import Artist
+from .container import BarContainer
+from .legend import Legend
+from .lines import Line2D
+from .offsetbox import OffsetBox
+from .patches import Rectangle
 
 def update_from_first_child(tgt: Rectangle, src: BarContainer) -> None: ...
 

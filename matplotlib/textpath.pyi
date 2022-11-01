@@ -1,7 +1,9 @@
-from matplotlib.texmanager import TexManager
 from typing import Literal, Sequence
-from .path import Path
+
+from matplotlib.texmanager import TexManager
+
 from .font_manager import FontProperties
+from .path import Path
 
 class TextToPath:
 

@@ -1,14 +1,15 @@
-from .font_manager import FontProperties
 from typing import Literal, Sequence
-from .transforms import Bbox, BboxBase, Transform
-from .text import Text
-from .backend_bases import Event, RendererBase
-from .patches import Patch, Rectangle
-from .lines import Line2D
-from .figure import Figure
+
+from .artist import allow_rasterization, Artist
 from .axes import Axes
-from .artist import Artist, allow_rasterization
+from .backend_bases import Event, RendererBase
+from .figure import Figure
+from .font_manager import FontProperties
+from .lines import Line2D
 from .offsetbox import DraggableOffsetBox
+from .patches import Patch, Rectangle
+from .text import Text
+from .transforms import Bbox, BboxBase, Transform
 
 class DraggableLegend(DraggableOffsetBox):
     def __init__(

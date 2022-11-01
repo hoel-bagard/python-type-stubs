@@ -1,44 +1,37 @@
 import datetime
-from matplotlib.contour import QuadContourSet
-import numpy as np
-from typing import Callable, ContextManager, Literal, Sequence, overload
-from matplotlib import rcParams as rcParams
-from matplotlib import style as style
-from ._typing import *
-from .tri.tricontour import TriContourSet
-from .transforms import Bbox, Transform
-from .text import Text, Annotation
-from .container import BarContainer, ErrorbarContainer, StemContainer
-from .patches import Polygon, FancyArrow
-from .quiver import Quiver
-from .colors import Colormap, Normalize
-from .backend_bases import FigureCanvasBase, MouseButton, FigureManagerBase
-from .collections import (
-    LineCollection,
-    Collection,
-    QuadMesh,
-    PathCollection,
-    PolyCollection,
-    BrokenBarHCollection,
-)
-from .lines import Line2D
-from .legend import Legend
-from .image import AxesImage, FigureImage
-from .figure import Figure, SubFigure
-from .scale import ScaleBase
-from .backend_bases import _Backend
-from .axes import Axes as Axes
-from .artist import Artist
-from .table import Table
-from .widgets import SubplotTool
-from .markers import MarkerStyle
-from .streamplot import StreamplotSet
-
 from array import array
+from typing import Callable, ContextManager, Literal, overload, Sequence
+
 import matplotlib
 import matplotlib.image
+import numpy as np
+from matplotlib import rcParams as rcParams
+from matplotlib import style as style
+from matplotlib.contour import QuadContourSet
+
 from . import rcParams
+from ._typing import *
+from .artist import Artist
+from .axes import Axes as Axes
+from .backend_bases import _Backend, FigureCanvasBase, FigureManagerBase, MouseButton
+from .collections import BrokenBarHCollection, Collection, LineCollection, PathCollection, PolyCollection, QuadMesh
+from .colors import Colormap, Normalize
+from .container import BarContainer, ErrorbarContainer, StemContainer
+from .figure import Figure, SubFigure
+from .image import AxesImage, FigureImage
+from .legend import Legend
+from .lines import Line2D
+from .markers import MarkerStyle
+from .patches import FancyArrow, Polygon
+from .quiver import Quiver
 from .rcsetup import interactive_bk as _interactive_bk
+from .scale import ScaleBase
+from .streamplot import StreamplotSet
+from .table import Table
+from .text import Annotation, Text
+from .transforms import Bbox, Transform
+from .tri.tricontour import TriContourSet
+from .widgets import SubplotTool
 
 def install_repl_displayhook()-> None: ...
 def uninstall_repl_displayhook()-> None: ...

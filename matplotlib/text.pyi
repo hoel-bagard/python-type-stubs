@@ -1,15 +1,17 @@
 import pathlib
-from matplotlib.path import Path
+from pathlib import PosixPath
 from typing import Any, Callable, Literal, Sequence
+
+from matplotlib.path import Path
+
 from ._typing import *
-from .transforms import Bbox, Transform
+from .artist import allow_rasterization, Artist
 from .backend_bases import MouseEvent, RendererBase
-from .font_manager import FontProperties
 from .figure import Figure
-from .artist import Artist, allow_rasterization
+from .font_manager import FontProperties
 from .offsetbox import DraggableAnnotation
 from .patches import FancyBboxPatch
-from pathlib import PosixPath
+from .transforms import Bbox, Transform
 
 def get_rotation(
     rotation: float | Literal[None, "horizontal", "vertical"]

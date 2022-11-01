@@ -1,5 +1,6 @@
-from .backend_bases import RendererBase
 import functools
+
+from .backend_bases import RendererBase
 
 class TexManager:
 

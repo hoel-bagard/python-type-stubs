@@ -1,22 +1,17 @@
 from ast import Str
 from tkinter import Image
-import numpy as np
 from typing import Callable, Literal, Sequence
+
+import numpy as np
+
 from ._typing import *
-from .text import Text
-from .patches import Circle
-from .backend_bases import (
-    DrawEvent,
-    Event,
-    FigureCanvasBase,
-    KeyEvent,
-    MouseButton,
-    MouseEvent,
-)
-from .lines import Line2D
-from .figure import Figure
-from .axes import Axes
 from .artist import Artist
+from .axes import Axes
+from .backend_bases import DrawEvent, Event, FigureCanvasBase, KeyEvent, MouseButton, MouseEvent
+from .figure import Figure
+from .lines import Line2D
+from .patches import Circle
+from .text import Text
 
 class LockDraw:
     def __init__(self) -> None: ...

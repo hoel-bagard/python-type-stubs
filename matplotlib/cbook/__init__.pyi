@@ -1,11 +1,11 @@
-import numpy as np
-from typing import Any, Callable, Generator, Iterator, overload
-from matplotlib._typing import *
-from matplotlib.artist import Artist
-
 import collections
 import collections.abc
 import contextlib
+from typing import Any, Callable, Generator, Iterator, overload
+
+import numpy as np
+from matplotlib._typing import *
+from matplotlib.artist import Artist
 
 class _StrongRef:
     def __init__(self, obj) -> None: ...

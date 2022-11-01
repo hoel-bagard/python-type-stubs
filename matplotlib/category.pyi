@@ -1,9 +1,10 @@
-import numpy as np
 from typing import Any, Iterable
-from .units import AxisInfo
-from .axis import Axis
+
+import numpy as np
 
 from . import ticker, units
+from .axis import Axis
+from .units import AxisInfo
 
 class StrCategoryConverter(units.ConversionInterface):
     @staticmethod

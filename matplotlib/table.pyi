@@ -1,14 +1,15 @@
 from typing import Literal, Sequence
+
 from ._typing import *
-from .text import Text
-from .path import Path
-from .backend_bases import MouseEvent, RendererBase
-from .font_manager import FontProperties
-from .figure import Figure
-from .transforms import Bbox, Transform
+from .artist import allow_rasterization, Artist
 from .axes import Axes
-from .artist import Artist, allow_rasterization
+from .backend_bases import MouseEvent, RendererBase
+from .figure import Figure
+from .font_manager import FontProperties
 from .patches import Rectangle
+from .path import Path
+from .text import Text
+from .transforms import Bbox, Transform
 
 class Cell(Rectangle):
 

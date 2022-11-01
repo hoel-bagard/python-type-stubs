@@ -1,10 +1,11 @@
-from .collections import PolyCollection
 from typing import Literal
+
 from ._typing import *
-from .backend_bases import Event, MouseEvent, RendererBase
-from .figure import Figure
+from .artist import allow_rasterization, Artist
 from .axes import Axes
-from .artist import Artist, allow_rasterization
+from .backend_bases import Event, MouseEvent, RendererBase
+from .collections import PolyCollection
+from .figure import Figure
 
 class QuiverKey(Artist):
 

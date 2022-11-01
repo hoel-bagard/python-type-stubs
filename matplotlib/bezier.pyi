@@ -1,7 +1,9 @@
-from matplotlib.path import Path
-import numpy as np
-from ._typing import *
 from typing import Callable
+
+import numpy as np
+from matplotlib.path import Path
+
+from ._typing import *
 
 class NonIntersectingPathException(ValueError): ...
 

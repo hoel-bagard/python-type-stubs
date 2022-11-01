@@ -1,6 +1,7 @@
-from typing import Sequence
-from .axes import Axes
 from types import SimpleNamespace
+from typing import Sequence
+
+from .axes import Axes
 
 RIGHT = ...
 UP = ...

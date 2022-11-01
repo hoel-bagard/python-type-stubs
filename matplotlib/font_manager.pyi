@@ -1,12 +1,12 @@
-from matplotlib.ft2font import FT2Font
-from typing import Literal
-from ._typing import *
-from ._afm import AFM
-
-from pathlib import PosixPath
-
 import json
 from functools import lru_cache
+from pathlib import PosixPath
+from typing import Literal
+
+from matplotlib.ft2font import FT2Font
+
+from ._afm import AFM
+from ._typing import *
 
 font_scalings = ...
 stretch_dict = ...

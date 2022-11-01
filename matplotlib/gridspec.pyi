@@ -1,6 +1,7 @@
-from .backend_bases import RendererBase
 from typing import Sequence
+
 from ._typing import *
+from .backend_bases import RendererBase
 from .figure import Figure, FigureBase, SubplotParams
 
 class GridSpecBase:

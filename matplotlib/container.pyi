@@ -1,11 +1,11 @@
-from typing import Literal
+from typing import Literal, Type
 
 from matplotlib.artist import Artist
+
 from ._typing import *
 from .collections import LineCollection
 from .lines import Line2D
 from .patches import Rectangle
-from typing import Type
 
 class Container(tuple):
     def __repr__(self) -> str: ...

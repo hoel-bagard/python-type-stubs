@@ -1,5 +1,7 @@
-import numpy as np
 from typing import Callable, Literal, Sequence
+
+import numpy as np
+
 from ._typing import *
 
 def window_hanning(x): ...

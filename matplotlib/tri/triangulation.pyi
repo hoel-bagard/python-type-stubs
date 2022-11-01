@@ -1,6 +1,8 @@
-import numpy as np
 from typing import Any
+
+import numpy as np
 from matplotlib._typing import *
+
 from .trifinder import TrapezoidMapTriFinder
 
 class Triangulation:

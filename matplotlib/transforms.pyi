@@ -1,9 +1,10 @@
-import numpy as np
 from typing import Literal, Sequence
+
+import numpy as np
 from matplotlib._typing import *
-from matplotlib.path import Path
-from matplotlib.patches import Patch
 from matplotlib.figure import Figure
+from matplotlib.patches import Patch
+from matplotlib.path import Path
 
 DEBUG = ...
 

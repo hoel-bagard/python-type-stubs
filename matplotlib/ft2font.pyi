@@ -1,8 +1,8 @@
 # Python: 3.8.8 (tags/v3.8.8:024d805, Feb 19 2021, 13:18:16) [MSC v.1928 64 bit (AMD64)]
 # Library: matplotlib, version: 3.4.0
 # Module: matplotlib.ft2font, version: unspecified
-import typing
 import builtins as _mod_builtins
+import typing
 
 BOLD: int
 EXTERNAL_STREAM: int

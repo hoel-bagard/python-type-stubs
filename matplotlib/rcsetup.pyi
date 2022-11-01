@@ -1,6 +1,7 @@
-from typing import Sequence
-from cycler import Cycler
 import ast
+from typing import Sequence
+
+from cycler import Cycler
 
 interactive_bk = ...
 non_interactive_bk = ...

@@ -1,6 +1,5 @@
 from typing import Any
 
-
 class StreamplotSet:
     def __getattr__(self, name: str) -> Any: ...  # incomplete
 
