@@ -1,12 +1,11 @@
 from pathlib import Path
-from typing import Literal
-from typing_extensions import Self
+from typing import Literal, overload
 
 import numpy as np
 import numpy.typing as npt
+from typing_extensions import Self
 
-from .coco_types import Annotation, Category, Image
-
+from .coco_types import Annotation, AnnotationG, Category, EncodedRLE, Image, RLE, TPolygon_segmentation
 
 class COCO:
     def __init__(self, annotation_file: str | Path = ...) -> None:
@@ -120,8 +119,8 @@ class COCO:
         """Download COCO images from mscoco.org server.
 
         Args:
-            tarDir (str): COCO results directory name
-            imgIds (list): images to be downloaded
+            tarDir: COCO results directory name
+            imgIds: images to be downloaded
         """
         ...
 
@@ -136,18 +135,26 @@ class COCO:
         """
         ...
 
-    def annToRLE(self, ann: Annotation) -> npt.NDArray[np.uint32]:
-        """Convert annotation which can be polygons, uncompressed RLE to RLE.
-
-        Returns:
-            binary mask (numpy 2D array)
-        """
+    @overload
+    def annToRLE(self, ann: AnnotationG[RLE]) -> RLE:
+        """Convert annotation which can be polygons, uncompressed RLE to RLE."""
         ...
 
-    def annToMask(self, ann: Annotation) -> npt.NDArray[np.uint32]:
+    @overload
+    def annToRLE(self, ann: AnnotationG[EncodedRLE]) -> EncodedRLE:
+        """Convert annotation which can be polygons, uncompressed RLE to RLE."""
+        ...
+
+    @overload
+    def annToRLE(self, ann: AnnotationG[TPolygon_segmentation]) -> EncodedRLE:
+        """Convert annotation which can be polygons, uncompressed RLE to RLE."""
+        ...
+
+    def annToMask(self, ann: Annotation) -> npt.NDArray[np.uint8]:
         """Convert annotation which can be polygons, uncompressed RLE, or RLE to binary mask.
 
         Args:
+            ann: The annotation whose mask shoulb be returned.
 
         Returns:
             binary mask (numpy 2D array)

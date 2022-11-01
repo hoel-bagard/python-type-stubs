@@ -1,8 +1,7 @@
-from typing import TypedDict
+from typing import Generic, TypedDict, TypeVar
 
 import numpy as np
 import numpy.typing as npt
-
 
 class Image(TypedDict):
     id: int
@@ -38,6 +37,27 @@ class Annotation(TypedDict):
     # bbox exemple:  "bbox": [473.07,395.93,38.65,28.67]
     bbox: list[float]
     iscrowd: int  # Either 1 or 0
+
+
+T_Seg = TypeVar("T_Seg", TPolygon_segmentation, RLE, EncodedRLE)
+
+
+class AnnotationG(TypedDict, Generic[T_Seg]):
+    id: int
+    image_id: int
+    category_id: int
+    # Segmentation can be a polygon, RLE or encoded RLE.
+    # Exemple of polygon: "segmentation": [[510.66,423.01,511.72,420.03,...,510.45,423.01]]
+    # Exemple of RLE: "segmentation": {"size": [40, 40], "counts": [245, 5, 35, 5, 35, 5, 35, 5, 35, 5, 1190]}
+    # Exemple of encoded RLE: "segmentation": {"size": [480, 640], "counts": "aUh2b0X...BgRU4"}
+    segmentation: T_Seg
+    area: float
+    # The COCO bounding box format is [top left x position, top left y position, width, height].
+    # bbox exemple:  "bbox": [473.07,395.93,38.65,28.67]
+    bbox: list[float]
+    iscrowd: int  # Either 1 or 0
+
+
 
 
 class Category(TypedDict):
