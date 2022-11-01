@@ -58,8 +58,6 @@ class AnnotationG(TypedDict, Generic[T_Seg]):
     iscrowd: int  # Either 1 or 0
 
 
-
-
 class Category(TypedDict):
     id: int
     name: str

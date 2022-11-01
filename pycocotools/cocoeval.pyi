@@ -56,7 +56,6 @@ class COCOeval:
         ...
 
 
-
 class Params:
     """Params for coco evaluation api"""
     def setDetParams(self) -> None:
@@ -67,6 +66,3 @@ class Params:
 
     def __init__(self, iouType: T_IOU = ...) -> None:
         ...
-
-
-
