@@ -31,7 +31,7 @@ class COCO:
         """
         ...
 
-    def getAnnIds(self, imgIds: list[int] = ..., catIds: list[int] = ..., areaRng: list[float] = ..., iscrowd: bool | None = ...) -> list[int]:
+    def getAnnIds(self, imgIds: list[int] | int = ..., catIds: list[int] | int = ..., areaRng: list[float] = ..., iscrowd: bool | None = ...) -> list[int]:
         """Get ann ids that satisfy given filter conditions. default skips that filter.
 
         Args:
@@ -45,7 +45,7 @@ class COCO:
         """
         ...
 
-    def getCatIds(self, catNms: list[str] = ..., supNms: list[str] = ..., catIds: list[int] = ...) -> list[int]:
+    def getCatIds(self, catNms: list[str] | str = ..., supNms: list[str] | str = ..., catIds: list[int] | int = ...) -> list[int]:
         """Get cat ids that satisfy given filter conditions. default skips that filter.
 
         Args:
@@ -58,7 +58,7 @@ class COCO:
         """
         ...
 
-    def getImgIds(self, imgIds: list[int] = ..., catIds: list[int] = ...) -> list[int]:
+    def getImgIds(self, imgIds: list[int] | int = ..., catIds: list[int] | int = ...) -> list[int]:
         """Get img ids that satisfy given filter conditions.
 
         Args:
@@ -70,7 +70,7 @@ class COCO:
         """
         ...
 
-    def loadAnns(self, ids: list[int] = ...) -> list[Annotation]:
+    def loadAnns(self, ids: list[int] | int = ...) -> list[Annotation]:
         """Load anns with the specified ids.
 
         Args:
@@ -81,7 +81,7 @@ class COCO:
         """
         ...
 
-    def loadCats(self, ids: list[int] = ...) -> list[Category]:
+    def loadCats(self, ids: list[int] | int = ...) -> list[Category]:
         """Load cats with the specified ids.
 
         Args:
@@ -92,9 +92,10 @@ class COCO:
         """
         ...
 
-    def loadImgs(self, ids: list[int] = ...) -> list[Image]:
-        """
-        Load anns with the specified ids.
+    def loadImgs(self, ids: list[int] | int = ...) -> list[Image]:
+        """Load anns with the specified ids.
+
+        Args:
             ids: integer ids specifying img
 
         Returns:

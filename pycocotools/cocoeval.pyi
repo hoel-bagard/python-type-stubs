@@ -1,4 +1,4 @@
-from typing import Literal, Optional
+from typing import Literal, Optional, TypeAlias
 
 import numpy as np
 import numpy.typing as npt
@@ -6,11 +6,19 @@ import numpy.typing as npt
 from .coco import COCO
 from .coco_types import EvaluationResult
 
-T_IOU = Literal["segm", "bbox", "keypoints"]
+T_IOU: TypeAlias = Literal["segm", "bbox", "keypoints"]
 
 
 class COCOeval:
-    def __init__(self, cocoGt: COCO = ..., cocoDt: COCO = ..., iouType: T_IOU = ...) -> None:
+    cocoGt: COCO
+    cocoDt: COCO
+    evalImgs: list[EvaluationResult]
+    eval: EvaluationResult
+    params: Params
+    stats: npt.NDArray[np.float64]
+    ious: dict[tuple[int, int],  list[float]]
+
+    def __init__(self, cocoGt: COCO | None = ..., cocoDt: COCO | None = ..., iouType: T_IOU = ...) -> None:
         """Initialize CocoEval using coco APIs for gt and dt
 
         Args:
@@ -58,11 +66,23 @@ class COCOeval:
 
 class Params:
     """Params for coco evaluation api"""
+    imgIds: list[int]
+    catIds: list[int]
+    iouThrs: npt.NDArray[np.float64]
+    recThrs: npt.NDArray[np.float64]
+    maxDets: list[int]
+    areaRng: list[int]
+    areaRngLbl: list[str]
+    useCats: int
+    kpt_oks_sigmas: npt.NDArray[np.float64]
+    iouType: T_IOU
+    useSegm: int | None
+
+    def __init__(self, iouType: T_IOU = ...) -> None:
+        ...
+
     def setDetParams(self) -> None:
         ...
 
     def setKpParams(self) -> None:
-        ...
-
-    def __init__(self, iouType: T_IOU = ...) -> None:
         ...
