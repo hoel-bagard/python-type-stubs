@@ -76,3 +76,9 @@ class EvaluationResult(TypedDict):
     dtScores: list[float]
     gtIgnore: npt.NDArray[np.float64]
     dtIgnore: npt.NDArray[np.float64]
+
+
+class Dataset(TypedDict):
+    images: list[Image]
+    annotations: list[Annotation]
+    categories: list[Category]

@@ -5,9 +5,16 @@ import numpy as np
 import numpy.typing as npt
 from typing_extensions import Self
 
-from .coco_types import Annotation, AnnotationG, Category, EncodedRLE, Image, RLE, TPolygon_segmentation
+from .coco_types import Annotation, AnnotationG, Category, Dataset, EncodedRLE, Image, RLE, TPolygon_segmentation
 
 class COCO:
+    anns: dict[int, Annotation]
+    dataset: Dataset
+    cats: dict[int, Category]
+    imgs: dict[int, Image]
+    imgToAnns: dict[int, list[Annotation]]
+    catToImgs: dict[int, list[int]]
+
     def __init__(self, annotation_file: str | Path = ...) -> None:
         """Constructor of Microsoft COCO helper class for reading and visualizing annotations.
 
@@ -24,7 +31,7 @@ class COCO:
         """
         ...
 
-    def getAnnIds(self, imgIds: list[int] = ..., catIds: list[int] = ..., areaRng: list[float] = ..., iscrowd: bool = ...) -> list[int]:
+    def getAnnIds(self, imgIds: list[int] = ..., catIds: list[int] = ..., areaRng: list[float] = ..., iscrowd: bool | None = ...) -> list[int]:
         """Get ann ids that satisfy given filter conditions. default skips that filter.
 
         Args:
@@ -115,7 +122,7 @@ class COCO:
         """
         ...
 
-    def download(self, tarDir: str = ..., imgIds: list[int] = ...) -> Literal[-1] | None:
+    def download(self, tarDir: str | None = ..., imgIds: list[int] = ...) -> Literal[-1] | None:
         """Download COCO images from mscoco.org server.
 
         Args:
