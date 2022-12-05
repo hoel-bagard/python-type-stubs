@@ -5,7 +5,7 @@ from matplotlib.markers import MarkerStyle
 
 from ._enums import CapStyle, JoinStyle
 from ._typing import *
-from .artist import allow_rasterization, Artist
+from .artist import Artist, allow_rasterization
 from .backend_bases import Event, MouseEvent, RendererBase
 from .backends.backend_agg import RendererAgg
 from .path import Path

@@ -7,7 +7,8 @@ import numpy as np
 from ._typing import *
 from .artist import Artist
 from .axes import Axes
-from .backend_bases import DrawEvent, Event, FigureCanvasBase, KeyEvent, MouseButton, MouseEvent
+from .backend_bases import (DrawEvent, Event, FigureCanvasBase, KeyEvent,
+                            MouseButton, MouseEvent)
 from .figure import Figure
 from .lines import Line2D
 from .patches import Circle

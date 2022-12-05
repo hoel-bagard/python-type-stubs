@@ -5,7 +5,7 @@ from typing import Any, Callable, Literal, Sequence
 from matplotlib.path import Path
 
 from ._typing import *
-from .artist import allow_rasterization, Artist
+from .artist import Artist, allow_rasterization
 from .backend_bases import MouseEvent, RendererBase
 from .figure import Figure
 from .font_manager import FontProperties

@@ -2,8 +2,9 @@ from typing import Any, Type
 
 from matplotlib import backend_tools
 from matplotlib._api import classproperty
-from matplotlib.backend_bases import (_Backend, FigureCanvasBase, FigureManagerBase, MouseButton, NavigationToolbar2,
-                                      TimerBase, ToolContainerBase)
+from matplotlib.backend_bases import (FigureCanvasBase, FigureManagerBase,
+                                      MouseButton, NavigationToolbar2,
+                                      TimerBase, ToolContainerBase, _Backend)
 from matplotlib.backend_tools import Cursors
 from matplotlib.transforms import Bbox
 

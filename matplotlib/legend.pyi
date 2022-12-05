@@ -1,6 +1,6 @@
 from typing import Literal, Sequence
 
-from .artist import allow_rasterization, Artist
+from .artist import Artist, allow_rasterization
 from .axes import Axes
 from .backend_bases import Event, RendererBase
 from .figure import Figure

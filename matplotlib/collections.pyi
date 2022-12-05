@@ -4,7 +4,7 @@ from typing import Callable, Literal, Sequence
 import numpy as np
 from matplotlib._enums import CapStyle, JoinStyle
 from matplotlib._typing import *
-from matplotlib.artist import allow_rasterization, Artist
+from matplotlib.artist import Artist, allow_rasterization
 from matplotlib.backend_bases import Event, MouseEvent
 from matplotlib.cm import ScalarMappable
 from matplotlib.colors import Colormap, Normalize

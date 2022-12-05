@@ -6,7 +6,8 @@ from typing import Any, Dict, List, Optional, Sequence, Tuple, Union
 
 import numpy as np
 
-from ...core.transforms_interface import BoxInternalType, DualTransform, FillValueType, KeypointInternalType
+from ...core.transforms_interface import (BoxInternalType, DualTransform,
+                                          FillValueType, KeypointInternalType)
 
 __all__ = ["Rotate", "RandomRotate90", "SafeRotate"]
 class RandomRotate90(DualTransform):

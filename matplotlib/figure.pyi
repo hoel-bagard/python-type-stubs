@@ -4,9 +4,10 @@ from typing import Callable, Literal, overload
 import numpy as np
 
 from ._typing import *
-from .artist import _finalize_rasterization, allow_rasterization, Artist
+from .artist import Artist, _finalize_rasterization, allow_rasterization
 from .axes import Axes
-from .backend_bases import FigureCanvasBase, MouseButton, MouseEvent, RendererBase
+from .backend_bases import (FigureCanvasBase, MouseButton, MouseEvent,
+                            RendererBase)
 from .colorbar import Colorbar
 from .colors import Colormap, Normalize
 from .gridspec import GridSpec, SubplotSpec

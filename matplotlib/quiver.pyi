@@ -1,7 +1,7 @@
 from typing import Literal
 
 from ._typing import *
-from .artist import allow_rasterization, Artist
+from .artist import Artist, allow_rasterization
 from .axes import Axes
 from .backend_bases import Event, MouseEvent, RendererBase
 from .collections import PolyCollection

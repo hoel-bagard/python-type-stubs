@@ -1,6 +1,6 @@
 import datetime
 from array import array
-from typing import Callable, ContextManager, Literal, overload, Sequence
+from typing import Callable, ContextManager, Literal, Sequence, overload
 
 import matplotlib
 import matplotlib.image
@@ -13,8 +13,10 @@ from . import rcParams
 from ._typing import *
 from .artist import Artist
 from .axes import Axes as Axes
-from .backend_bases import _Backend, FigureCanvasBase, FigureManagerBase, MouseButton
-from .collections import BrokenBarHCollection, Collection, LineCollection, PathCollection, PolyCollection, QuadMesh
+from .backend_bases import (FigureCanvasBase, FigureManagerBase, MouseButton,
+                            _Backend)
+from .collections import (BrokenBarHCollection, Collection, LineCollection,
+                          PathCollection, PolyCollection, QuadMesh)
 from .colors import Colormap, Normalize
 from .container import BarContainer, ErrorbarContainer, StemContainer
 from .figure import Figure, SubFigure

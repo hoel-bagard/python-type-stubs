@@ -2,7 +2,8 @@ from enum import Enum
 from typing import Type
 
 from matplotlib._typing import *
-from matplotlib.backend_bases import _Backend, FigureCanvasBase, FigureManagerBase, GraphicsContextBase
+from matplotlib.backend_bases import (FigureCanvasBase, FigureManagerBase,
+                                      GraphicsContextBase, _Backend)
 from matplotlib.font_manager import FontProperties
 from matplotlib.text import Text
 from matplotlib.transforms import Affine2DBase, Transform

@@ -8,7 +8,8 @@ from typing import Optional, Sequence, Tuple, Union
 import numpy as np
 import skimage.transform
 
-from ...core.transforms_interface import (BoxInternalType, DualTransform, ImageColorType, KeypointInternalType,
+from ...core.transforms_interface import (BoxInternalType, DualTransform,
+                                          ImageColorType, KeypointInternalType,
                                           ScaleFloatType)
 
 __all__ = ["ShiftScaleRotate", "ElasticTransform", "Perspective", "Affine", "PiecewiseAffine", "VerticalFlip", "HorizontalFlip", "Flip", "Transpose", "OpticalDistortion", "GridDistortion", "PadIfNeeded"]

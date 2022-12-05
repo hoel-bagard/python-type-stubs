@@ -6,7 +6,8 @@ from typing import Any, Callable, Optional, Set
 import numpy as np
 from matplotlib._enums import CapStyle, JoinStyle
 from matplotlib._typing import *
-from matplotlib.backend_bases import _Backend, FigureCanvasBase, FigureManagerBase, GraphicsContextBase
+from matplotlib.backend_bases import (FigureCanvasBase, FigureManagerBase,
+                                      GraphicsContextBase, _Backend)
 from matplotlib.figure import Figure
 from matplotlib.font_manager import FontProperties
 from matplotlib.text import Text

@@ -5,7 +5,8 @@ import numpy as np
 import numpy.typing as npt
 from typing_extensions import Self
 
-from .coco_types import Annotation, AnnotationG, Category, Dataset, EncodedRLE, Image, RLE, TPolygon_segmentation
+from .coco_types import (RLE, Annotation, AnnotationG, Category, Dataset,
+                         EncodedRLE, Image, TPolygon_segmentation)
 
 class COCO:
     anns: dict[int, Annotation]

@@ -1,5 +1,7 @@
 from matplotlib._enums import CapStyle, JoinStyle
-from matplotlib.backend_bases import _Backend, FigureCanvasBase, FigureManagerBase, GraphicsContextBase, RendererBase
+from matplotlib.backend_bases import (FigureCanvasBase, FigureManagerBase,
+                                      GraphicsContextBase, RendererBase,
+                                      _Backend)
 
 backend_version = ...
 

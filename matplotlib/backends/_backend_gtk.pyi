@@ -1,6 +1,7 @@
 from matplotlib import backend_tools
 from matplotlib._typing import *
-from matplotlib.backend_bases import _Backend, FigureCanvasBase, FigureManagerBase, NavigationToolbar2, TimerBase
+from matplotlib.backend_bases import (FigureCanvasBase, FigureManagerBase,
+                                      NavigationToolbar2, TimerBase, _Backend)
 from matplotlib.backend_tools import Cursors
 
 backend_version = ...

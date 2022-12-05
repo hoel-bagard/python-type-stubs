@@ -4,7 +4,7 @@ import numpy as np
 from PIL.Image import Image
 
 from ._typing import *
-from .artist import allow_rasterization, Artist
+from .artist import Artist, allow_rasterization
 from .axes import Axes
 from .backend_bases import MouseEvent, RendererBase
 from .cm import ScalarMappable

@@ -4,7 +4,7 @@ import numpy as np
 
 from ._enums import CapStyle, JoinStyle
 from ._typing import *
-from .artist import allow_rasterization, Artist
+from .artist import Artist, allow_rasterization
 from .backend_bases import MouseEvent, RendererBase
 from .path import Path
 from .transforms import Bbox, Transform

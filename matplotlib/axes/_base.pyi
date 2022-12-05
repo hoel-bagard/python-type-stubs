@@ -1,8 +1,9 @@
-from typing import Any, Callable, Collection, Literal, MutableSequence, overload, Sequence
+from typing import (Any, Callable, Collection, Literal, MutableSequence,
+                    Sequence, overload)
 
 import numpy as np
 from matplotlib._typing import *
-from matplotlib.artist import allow_rasterization, Artist
+from matplotlib.artist import Artist, allow_rasterization
 from matplotlib.axis import XAxis, YAxis
 from matplotlib.backend_bases import MouseButton, MouseEvent, RendererBase
 from matplotlib.cbook import Grouper

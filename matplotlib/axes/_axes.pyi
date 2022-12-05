@@ -1,6 +1,6 @@
 import datetime
 from re import L
-from typing import Callable, Literal, overload, Sequence
+from typing import Callable, Literal, Sequence, overload
 
 import numpy as np
 from matplotlib._typing import *
@@ -8,8 +8,9 @@ from matplotlib.artist import Artist
 from matplotlib.axes._secondary_axes import SecondaryAxis
 from matplotlib.axis import XAxis, YAxis
 from matplotlib.backend_tools import Cursors
-from matplotlib.collections import (BrokenBarHCollection, Collection, EventCollection, LineCollection, PathCollection,
-                                    PolyCollection, QuadMesh)
+from matplotlib.collections import (BrokenBarHCollection, Collection,
+                                    EventCollection, LineCollection,
+                                    PathCollection, PolyCollection, QuadMesh)
 from matplotlib.colors import Colormap, Normalize
 from matplotlib.container import BarContainer, ErrorbarContainer, StemContainer
 from matplotlib.contour import QuadContourSet

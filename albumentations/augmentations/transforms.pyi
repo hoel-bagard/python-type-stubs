@@ -7,7 +7,8 @@ from typing import Any, Dict, List, Optional, Sequence, Tuple, Union
 
 import numpy as np
 
-from ..core.transforms_interface import DualTransform, ImageOnlyTransform, NoOp, ScaleFloatType
+from ..core.transforms_interface import (DualTransform, ImageOnlyTransform,
+                                         NoOp, ScaleFloatType)
 
 __all__ = ["Normalize", "RandomGamma", "RandomGridShuffle", "HueSaturationValue", "RGBShift", "RandomBrightness", "RandomContrast", "GaussNoise", "CLAHE", "ChannelShuffle", "InvertImg", "ToGray", "ToSepia", "JpegCompression", "ImageCompression", "ToFloat", "FromFloat", "RandomBrightnessContrast", "RandomSnow", "RandomRain", "RandomFog", "RandomSunFlare", "RandomShadow", "RandomToneCurve", "Lambda", "ISONoise", "Solarize", "Equalize", "Posterize", "Downscale", "MultiplicativeNoise", "FancyPCA", "ColorJitter", "Sharpen", "Emboss", "Superpixels", "TemplateTransform", "RingingOvershoot", "UnsharpMask", "PixelDropout", "Spatter"]
 class RandomGridShuffle(DualTransform):
