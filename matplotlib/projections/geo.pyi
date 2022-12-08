@@ -7,6 +7,7 @@ from matplotlib.path import Path
 from matplotlib.ticker import Formatter
 from matplotlib.transforms import Transform
 
+
 class GeoAxes(Axes):
     class ThetaFormatter(Formatter):
         def __init__(self, round_to=...) -> None: ...

@@ -3,6 +3,7 @@
 from pathlib import Path
 from typing import Any, Dict, List, Mapping, Union
 
+
 _Style = Union[str, Path, Mapping[str, Any]]
 _StyleOrList = Union[_Style, List[_Style]]
 

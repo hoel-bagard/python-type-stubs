@@ -4,9 +4,9 @@ from typing import Literal, Sequence
 from matplotlib import backend_tools
 from matplotlib._api import classproperty
 from matplotlib._typing import *
-from matplotlib.backend_bases import (FigureCanvasBase, FigureManagerBase,
-                                      NavigationToolbar2, TimerBase,
-                                      ToolContainerBase, _Backend)
+from matplotlib.backend_bases import (_Backend, FigureCanvasBase, FigureManagerBase, NavigationToolbar2, TimerBase,
+                                      ToolContainerBase)
+
 
 backend_version: float = ...
 cursord: dict[backend_tools.Cursors, str] = ...

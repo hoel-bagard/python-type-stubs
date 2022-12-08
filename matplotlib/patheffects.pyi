@@ -4,6 +4,7 @@ from ._typing import *
 from .backend_bases import GraphicsContextBase, RendererBase
 from .transforms import Transform
 
+
 class AbstractPathEffect:
     def __init__(self, offset: Sequence[float] = ...) -> None: ...
     def draw_path(

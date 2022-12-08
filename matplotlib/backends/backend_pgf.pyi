@@ -3,13 +3,12 @@ from typing import Any, Callable
 import numpy as np
 from matplotlib import _api
 from matplotlib._typing import *
-from matplotlib.backend_bases import (FigureCanvasBase, FigureManagerBase,
-                                      GraphicsContextBase, RendererBase,
-                                      _Backend)
+from matplotlib.backend_bases import _Backend, FigureCanvasBase, FigureManagerBase, GraphicsContextBase, RendererBase
 from matplotlib.figure import Figure
 from matplotlib.font_manager import FontProperties
 from matplotlib.text import Text
 from matplotlib.transforms import Affine2DBase, Transform
+
 
 class __getattr__:
     NO_ESCAPE = ...

@@ -4,6 +4,7 @@ from ._layoutgrid import LayoutGrid
 from .figure import Figure, FigureBase
 from .gridspec import GridSpecBase
 
+
 class LayoutEngine:
     def __init__(self, **kwargs) -> None: ...
     def set(self, **kwargs)-> None: ...

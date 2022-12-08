@@ -4,6 +4,7 @@ from .figure import Figure
 from .gridspec import SubplotSpec
 from .transforms import Bbox
 
+
 class LayoutGrid:
     def __init__(
         self,

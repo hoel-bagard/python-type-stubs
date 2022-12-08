@@ -6,8 +6,8 @@ from typing import Dict, Sequence, Tuple, Union
 
 import numpy as np
 
-from ...core.transforms_interface import (BoxInternalType, DualTransform,
-                                          KeypointInternalType)
+from ...core.transforms_interface import BoxInternalType, DualTransform, KeypointInternalType
+
 
 __all__ = ["RandomScale", "LongestMaxSize", "SmallestMaxSize", "Resize"]
 class RandomScale(DualTransform):

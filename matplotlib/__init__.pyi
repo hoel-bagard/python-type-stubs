@@ -9,6 +9,7 @@ from . import colors as colors
 from . import rcsetup
 from ._typing import *
 
+
 class __getattr__:
 
     URL_REGEX = ...

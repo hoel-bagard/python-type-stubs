@@ -1,6 +1,6 @@
 from typing import Literal, Sequence
 
-from .artist import Artist, allow_rasterization
+from .artist import allow_rasterization, Artist
 from .axes import Axes
 from .backend_bases import Event, RendererBase
 from .figure import Figure
@@ -10,6 +10,7 @@ from .offsetbox import DraggableOffsetBox
 from .patches import Patch, Rectangle
 from .text import Text
 from .transforms import Bbox, BboxBase, Transform
+
 
 class DraggableLegend(DraggableOffsetBox):
     def __init__(

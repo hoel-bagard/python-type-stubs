@@ -1,6 +1,7 @@
 from matplotlib.axes import Axes
 from matplotlib.contour import ContourSet
 
+
 class TriContourSet(ContourSet):
     def __init__(self, ax: Axes, *args, **kwargs) -> None: ...
 

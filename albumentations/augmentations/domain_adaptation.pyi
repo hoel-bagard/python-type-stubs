@@ -9,6 +9,7 @@ from albumentations.augmentations.utils import clipped, preserve_shape
 
 from ..core.transforms_interface import ImageOnlyTransform
 
+
 __all__ = ["HistogramMatching", "FDA", "PixelDistributionAdaptation", "fourier_domain_adaptation", "apply_histogram", "adapt_pixel_distribution"]
 @clipped
 @preserve_shape

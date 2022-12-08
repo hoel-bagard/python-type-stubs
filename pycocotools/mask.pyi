@@ -5,6 +5,7 @@ import numpy.typing as npt
 
 from .coco_types import EncodedRLE
 
+
 def iou(dt: npt.NDArray[np.uint32] | list[float] | list[EncodedRLE],
         gt: npt.NDArray[np.uint32] | list[float] | list[EncodedRLE],
         pyiscrowd: list[int] | npt.NDArray[np.uint8]) -> list[Any] | npt.NDArray[np.float64]:

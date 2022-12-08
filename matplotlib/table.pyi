@@ -1,7 +1,7 @@
 from typing import Literal, Sequence
 
 from ._typing import *
-from .artist import Artist, allow_rasterization
+from .artist import allow_rasterization, Artist
 from .axes import Axes
 from .backend_bases import MouseEvent, RendererBase
 from .figure import Figure
@@ -10,6 +10,7 @@ from .patches import Rectangle
 from .path import Path
 from .text import Text
 from .transforms import Bbox, Transform
+
 
 class Cell(Rectangle):
 

@@ -4,10 +4,9 @@ from typing import Callable, Literal, overload
 import numpy as np
 
 from ._typing import *
-from .artist import Artist, _finalize_rasterization, allow_rasterization
+from .artist import _finalize_rasterization, allow_rasterization, Artist
 from .axes import Axes
-from .backend_bases import (FigureCanvasBase, MouseButton, MouseEvent,
-                            RendererBase)
+from .backend_bases import FigureCanvasBase, MouseButton, MouseEvent, RendererBase
 from .colorbar import Colorbar
 from .colors import Colormap, Normalize
 from .gridspec import GridSpec, SubplotSpec
@@ -16,6 +15,7 @@ from .layout_engine import LayoutEngine
 from .legend import Legend
 from .text import Text
 from .transforms import BboxBase
+
 
 class _AxesStack:
     def __init__(self) -> None: ...

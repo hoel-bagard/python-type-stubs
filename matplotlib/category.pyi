@@ -6,6 +6,7 @@ from . import ticker, units
 from .axis import Axis
 from .units import AxisInfo
 
+
 class StrCategoryConverter(units.ConversionInterface):
     @staticmethod
     def convert(

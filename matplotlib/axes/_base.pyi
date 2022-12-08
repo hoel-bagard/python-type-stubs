@@ -1,9 +1,8 @@
-from typing import (Any, Callable, Collection, Literal, MutableSequence,
-                    Sequence, overload)
+from typing import Any, Callable, Collection, Literal, MutableSequence, overload, Sequence
 
 import numpy as np
 from matplotlib._typing import *
-from matplotlib.artist import Artist, allow_rasterization
+from matplotlib.artist import allow_rasterization, Artist
 from matplotlib.axis import XAxis, YAxis
 from matplotlib.backend_bases import MouseButton, MouseEvent, RendererBase
 from matplotlib.cbook import Grouper
@@ -18,6 +17,7 @@ from matplotlib.table import Table
 from matplotlib.transforms import Bbox, BboxBase, Transform, TransformedBbox
 
 from ._axes import Axes
+
 
 class _axis_method_wrapper:
     def __init__(self, attr_name, method_name, *, doc_sub=...) -> None: ...

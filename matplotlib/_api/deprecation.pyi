@@ -2,6 +2,7 @@ import contextlib
 from functools import partial
 from typing import Callable, Iterator
 
+
 class MatplotlibDeprecationWarning(DeprecationWarning): ...
 
 def warn_deprecated(

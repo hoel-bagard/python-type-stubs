@@ -8,6 +8,7 @@ from .lines import Line2D
 from .offsetbox import OffsetBox
 from .patches import Rectangle
 
+
 def update_from_first_child(tgt: Rectangle, src: BarContainer) -> None: ...
 
 class HandlerBase:

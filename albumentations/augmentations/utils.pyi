@@ -8,6 +8,7 @@ import numpy as np
 from albumentations.core.transforms_interface import KeypointInternalType
 from typing_extensions import Concatenate, ParamSpec
 
+
 __all__ = ["read_bgr_image", "read_rgb_image", "MAX_VALUES_BY_DTYPE", "NPDTYPE_TO_OPENCV_DTYPE", "clipped", "get_opencv_dtype_from_numpy", "angle_2pi_range", "clip", "preserve_shape", "preserve_channel_dim", "ensure_contiguous", "is_rgb_image", "is_grayscale_image", "is_multispectral_image", "get_num_channels", "non_rgb_warning", "_maybe_process_in_chunks"]
 P = ParamSpec("P")
 MAX_VALUES_BY_DTYPE = ...

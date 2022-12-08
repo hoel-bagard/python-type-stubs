@@ -1,5 +1,6 @@
 from typing import Callable
 
+
 class ProjectionRegistry:
     def __init__(self) -> None: ...
     def register(self, *projections)-> None: ...

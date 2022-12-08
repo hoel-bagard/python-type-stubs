@@ -3,6 +3,7 @@ from typing import Literal, Sequence
 from ._typing import *
 from .collections import PolyCollection
 
+
 __all__ = ["stackplot"]
 
 def stackplot(

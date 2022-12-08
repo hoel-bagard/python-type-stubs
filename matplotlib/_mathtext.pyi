@@ -8,6 +8,7 @@ from matplotlib.mathtext import MathtextBackend
 
 from .font_manager import FontProperties
 
+
 def get_unicode_index(symbol: str, math: bool = True) -> int: ...
 
 class Fonts:

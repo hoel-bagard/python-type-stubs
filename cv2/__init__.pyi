@@ -5,6 +5,7 @@ import numpy.typing as npt
 
 from .constants import *
 
+
 TImg = TypeVar("TImg", np.uint8, np.float64)
 TColor = TypeVar("TColor", tuple[int, int, int], int, tuple[float, float, float], float)
 TPoint = tuple[int, int]

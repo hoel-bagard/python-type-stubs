@@ -12,6 +12,7 @@ from .patches import Patch
 from .path import Path
 from .transforms import Transform
 
+
 class Spine(Patch):
     def __str__(self) -> str: ...
     def __init__(self, axes: Axes, spine_type: str, path: Path, **kwargs) -> None: ...

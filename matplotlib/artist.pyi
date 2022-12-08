@@ -9,6 +9,7 @@ from .path import Path
 from .patheffects import AbstractPathEffect
 from .transforms import Bbox, Transform
 
+
 def allow_rasterization(
     draw,
 )-> Callable: ...

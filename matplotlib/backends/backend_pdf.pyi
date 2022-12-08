@@ -6,14 +6,14 @@ from typing import Any, Callable, Optional, Set
 import numpy as np
 from matplotlib._enums import CapStyle, JoinStyle
 from matplotlib._typing import *
-from matplotlib.backend_bases import (FigureCanvasBase, FigureManagerBase,
-                                      GraphicsContextBase, _Backend)
+from matplotlib.backend_bases import _Backend, FigureCanvasBase, FigureManagerBase, GraphicsContextBase
 from matplotlib.figure import Figure
 from matplotlib.font_manager import FontProperties
 from matplotlib.text import Text
 from matplotlib.transforms import Affine2DBase, Transform
 
 from . import _backend_pdf_ps
+
 
 def fill(strings, linelen: int=75)-> bytes: ...
 def pdfRepr(obj) -> bytes: ...

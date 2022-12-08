@@ -4,6 +4,7 @@
 import builtins as _mod_builtins
 import typing
 
+
 BOLD: int
 EXTERNAL_STREAM: int
 FAST_GLYPHS: int

@@ -13,6 +13,7 @@ from .spines import Spine
 from .text import Text
 from .ticker import Formatter, Locator
 
+
 class _ColorbarSpine(Spine):
     def __init__(self, axes) -> None: ...
     def get_window_extent(self, renderer: RendererBase=...): ...

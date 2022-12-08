@@ -3,6 +3,7 @@ from types import SimpleNamespace
 from ._typing import *
 from .font_manager import FontProperties
 
+
 get_unicode_index = ...
 
 class MathtextBackend:

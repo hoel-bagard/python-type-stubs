@@ -5,6 +5,7 @@ from matplotlib.texmanager import TexManager
 from .font_manager import FontProperties
 from .path import Path
 
+
 class TextToPath:
 
     FONT_SCALE = ...

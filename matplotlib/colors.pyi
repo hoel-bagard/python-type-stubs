@@ -9,6 +9,7 @@ from matplotlib._typing import *
 
 from .scale import AsinhScale, FuncScale, LogScale, SymmetricalLogScale
 
+
 class _ColorMapping(dict):
     def __init__(self, mapping) -> None: ...
     def __setitem__(self, key, value)-> None: ...

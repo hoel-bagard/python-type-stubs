@@ -8,6 +8,7 @@ from .backend_bases import Event, MouseEvent, ToolContainerBase
 from .backend_managers import ToolManager
 from .figure import Figure
 
+
 class Cursors(enum.IntEnum):
 
     POINTER: Cursors

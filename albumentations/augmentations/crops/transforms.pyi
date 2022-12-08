@@ -6,8 +6,8 @@ from typing import Any, Dict, List, Optional, Sequence, Tuple, Union
 
 import numpy as np
 
-from ...core.transforms_interface import (BoxInternalType, DualTransform,
-                                          KeypointInternalType)
+from ...core.transforms_interface import BoxInternalType, DualTransform, KeypointInternalType
+
 
 __all__ = ["RandomCrop", "CenterCrop", "Crop", "CropNonEmptyMaskIfExists", "RandomSizedCrop", "RandomResizedCrop", "RandomCropNearBBox", "RandomSizedBBoxSafeCrop", "CropAndPad", "RandomCropFromBorders", "BBoxSafeRandomCrop"]
 class RandomCrop(DualTransform):

@@ -2,6 +2,7 @@ from matplotlib._typing import Scalar
 from matplotlib.backend_bases import RendererBase
 from matplotlib.figure import Figure
 
+
 class MixedModeRenderer:
     def __init__(
         self,

@@ -9,8 +9,8 @@ from matplotlib.lines import Line2D
 from matplotlib.path import Path
 from matplotlib.text import Text
 from matplotlib.ticker import Formatter, Locator
-from matplotlib.transforms import (Affine2DBase, Bbox, ScaledTranslation,
-                                   Transform)
+from matplotlib.transforms import Affine2DBase, Bbox, ScaledTranslation, Transform
+
 
 class PolarTransform(Transform):
 

@@ -10,6 +10,7 @@ from .patches import FancyBboxPatch
 from .text import _AnnotationBase
 from .transforms import Bbox, BboxBase, Transform
 
+
 DEBUG = ...
 
 def bbox_artist(*args, **kwargs): ...

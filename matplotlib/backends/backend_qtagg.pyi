@@ -1,5 +1,6 @@
 from .backend_agg import FigureCanvasAgg
-from .backend_qt import FigureCanvasQT, _BackendQT
+from .backend_qt import _BackendQT, FigureCanvasQT
+
 
 class FigureCanvasQTAgg(FigureCanvasAgg, FigureCanvasQT):
     def __init__(self, figure=...) -> None: ...

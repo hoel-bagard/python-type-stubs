@@ -5,9 +5,9 @@ from matplotlib import backend_tools
 from matplotlib._api import classproperty
 from matplotlib.backend_bases import FigureCanvasBase, ToolContainerBase
 
+from ._backend_gtk import _BackendGTK, _FigureManagerGTK, _NavigationToolbar2GTK
 from ._backend_gtk import TimerGTK as TimerGTK3
-from ._backend_gtk import (_BackendGTK, _FigureManagerGTK,
-                           _NavigationToolbar2GTK)
+
 
 class __getattr__:
     @property

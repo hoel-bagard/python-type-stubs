@@ -4,6 +4,7 @@ from ._typing import *
 from .axes import Axes
 from .colors import Colormap, Normalize
 
+
 __all__ = ["streamplot"]
 
 def streamplot(

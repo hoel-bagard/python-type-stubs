@@ -5,7 +5,7 @@ from typing import Any, Callable, Literal, Type
 import numpy as np
 from units.basic_units import BasicUnit
 
-from .artist import Artist, allow_rasterization
+from .artist import allow_rasterization, Artist
 from .axes import Axes
 from .backend_bases import MouseEvent, RendererBase
 from .backends.backend_mixed import MixedModeRenderer
@@ -15,6 +15,7 @@ from .patches import Patch
 from .text import Text
 from .ticker import Formatter, Locator
 from .transforms import Bbox, Transform
+
 
 GRIDLINE_INTERPOLATION_STEPS: int = ...
 

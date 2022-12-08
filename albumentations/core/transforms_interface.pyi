@@ -8,6 +8,7 @@ import numpy as np
 
 from .serialization import Serializable
 
+
 __all__ = ["to_tuple", "BasicTransform", "DualTransform", "ImageOnlyTransform", "NoOp", "BoxType", "KeypointType", "ImageColorType", "ScaleFloatType", "ScaleIntType", "ImageColorType"]
 NumType = Union[int, float, np.ndarray]
 BoxInternalType = Tuple[float, float, float, float]

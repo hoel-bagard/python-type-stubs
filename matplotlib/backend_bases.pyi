@@ -18,6 +18,7 @@ from .text import Text
 from .transforms import Affine2DBase, Bbox, Transform, TransformedPath
 from .widgets import Cursor, LockDraw
 
+
 def register_backend(format: str, backend, description: str = ...): ...
 def get_registered_canvas_class(format): ...
 

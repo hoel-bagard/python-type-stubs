@@ -5,6 +5,7 @@ from ._typing import *
 from .axis import Axis
 from .scale import SymmetricalLogTransform
 
+
 __all__ = (
     "TickHelper",
     "Formatter",

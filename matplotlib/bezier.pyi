@@ -5,6 +5,7 @@ from matplotlib.path import Path
 
 from ._typing import *
 
+
 class NonIntersectingPathException(ValueError): ...
 
 def get_intersection(cx1, cy1, cos_t1, sin_t1, cx2, cy2, cos_t2, sin_t2)-> tuple[float, float]: ...

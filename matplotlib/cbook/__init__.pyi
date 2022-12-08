@@ -7,6 +7,7 @@ import numpy as np
 from matplotlib._typing import *
 from matplotlib.artist import Artist
 
+
 class _StrongRef:
     def __init__(self, obj) -> None: ...
     def __call__(self): ...

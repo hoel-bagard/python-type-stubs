@@ -6,6 +6,7 @@ import numpy as np
 from ._typing import *
 from .transforms import Affine2D, Bbox, Transform
 
+
 class Path:
 
     code_type = np.uint8

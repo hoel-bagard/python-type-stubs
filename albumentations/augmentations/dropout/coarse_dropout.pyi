@@ -8,6 +8,7 @@ import numpy as np
 
 from ...core.transforms_interface import DualTransform, KeypointType
 
+
 __all__ = ["CoarseDropout"]
 class CoarseDropout(DualTransform):
     """CoarseDropout of the rectangular regions in the image.

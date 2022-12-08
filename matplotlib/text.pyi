@@ -5,13 +5,14 @@ from typing import Any, Callable, Literal, Sequence
 from matplotlib.path import Path
 
 from ._typing import *
-from .artist import Artist, allow_rasterization
+from .artist import allow_rasterization, Artist
 from .backend_bases import MouseEvent, RendererBase
 from .figure import Figure
 from .font_manager import FontProperties
 from .offsetbox import DraggableAnnotation
 from .patches import FancyBboxPatch
 from .transforms import Bbox, Transform
+
 
 def get_rotation(
     rotation: float | Literal[None, "horizontal", "vertical"]

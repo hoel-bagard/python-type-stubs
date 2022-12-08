@@ -4,13 +4,14 @@ import numpy as np
 from PIL.Image import Image
 
 from ._typing import *
-from .artist import Artist, allow_rasterization
+from .artist import allow_rasterization, Artist
 from .axes import Axes
 from .backend_bases import MouseEvent, RendererBase
 from .cm import ScalarMappable
 from .colors import Colormap, Normalize
 from .figure import Figure
 from .transforms import Affine2D, Bbox
+
 
 interpolations_names = ...
 

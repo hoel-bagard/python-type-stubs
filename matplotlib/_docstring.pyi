@@ -1,5 +1,6 @@
 from typing import Callable
 
+
 class Substitution:
     def __init__(self, *args, **kwargs) -> None: ...
     def __call__(self, func: Callable) -> Callable: ...

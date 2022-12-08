@@ -5,6 +5,7 @@ from matplotlib._typing import *
 
 from .trifinder import TrapezoidMapTriFinder
 
+
 class Triangulation:
     def __init__(
         self,

@@ -11,6 +11,7 @@ from .text import Text
 from .ticker import Formatter
 from .transforms import Transform
 
+
 class ClabelText(Text):
     def get_rotation(self) -> float: ...
 

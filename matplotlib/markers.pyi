@@ -5,6 +5,7 @@ from ._typing import *
 from .path import Path
 from .transforms import Affine2D, Transform
 
+
 class MarkerStyle:
 
     markers: list = ...

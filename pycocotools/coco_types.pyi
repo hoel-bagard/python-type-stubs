@@ -3,6 +3,7 @@ from typing import Generic, TypeAlias, TypedDict, TypeVar
 import numpy as np
 import numpy.typing as npt
 
+
 class Image(TypedDict):
     id: int
     width: int

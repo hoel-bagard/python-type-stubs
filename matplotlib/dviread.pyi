@@ -4,6 +4,7 @@ from functools import lru_cache
 from ._typing import *
 from .path import Path
 
+
 Page = ...
 Box = ...
 

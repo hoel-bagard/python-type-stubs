@@ -3,6 +3,7 @@ from typing import Any, Callable, Generator, Iterable, Type
 
 from .deprecation import MatplotlibDeprecationWarning
 
+
 class classproperty:
     def __init__(
         self, fget: Callable, fset: None = ..., fdel: None = ..., doc: None = ...

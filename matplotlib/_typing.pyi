@@ -4,6 +4,7 @@ import io
 import numpy.typing
 import pandas as pd
 
+
 Decimal = decimal.Decimal
 PythonScalar = str | int | float | bool
 

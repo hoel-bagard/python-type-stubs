@@ -6,6 +6,7 @@ from .backend_bases import Event, FigureCanvasBase
 from .backend_tools import ToolBase
 from .figure import Figure
 
+
 class ToolEvent:
     def __init__(self, name: str, sender, tool, data=...) -> None: ...
 

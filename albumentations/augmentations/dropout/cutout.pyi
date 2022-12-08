@@ -7,6 +7,7 @@ from typing import Any, Dict, Tuple, Union
 import numpy as np
 from albumentations.core.transforms_interface import ImageOnlyTransform
 
+
 __all__ = ["Cutout"]
 class Cutout(ImageOnlyTransform):
     """CoarseDropout of the square regions in the image.

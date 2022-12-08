@@ -6,6 +6,7 @@ from matplotlib.figure import Figure
 from matplotlib.patches import Patch
 from matplotlib.path import Path
 
+
 DEBUG = ...
 
 class TransformNode:

@@ -2,6 +2,7 @@ import numpy as np
 
 from .triangulation import Triangulation
 
+
 class TriAnalyzer:
     def __init__(self, triangulation: Triangulation) -> None: ...
     @property

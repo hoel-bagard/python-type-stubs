@@ -4,6 +4,7 @@ from matplotlib._typing import *
 from .triangulation import Triangulation
 from .triinterpolate import TriInterpolator
 
+
 class TriRefiner:
     def __init__(self, triangulation: Triangulation) -> None: ...
 

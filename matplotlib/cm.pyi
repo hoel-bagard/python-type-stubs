@@ -3,6 +3,7 @@ from collections.abc import Mapping
 from ._typing import *
 from .colors import Colormap, Normalize
 
+
 class __getattr__:
     LUTSIZE = ...
 

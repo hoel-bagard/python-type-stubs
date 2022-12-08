@@ -7,6 +7,7 @@ from .collections import LineCollection
 from .lines import Line2D
 from .patches import Rectangle
 
+
 class Container(tuple):
     def __repr__(self) -> str: ...
     def __new__(cls: Type[Container], *args, **kwargs) -> Container: ...

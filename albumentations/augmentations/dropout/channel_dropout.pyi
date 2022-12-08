@@ -7,6 +7,7 @@ from typing import Any, Mapping, Tuple, Union
 import numpy as np
 from albumentations.core.transforms_interface import ImageOnlyTransform
 
+
 __all__ = ["ChannelDropout"]
 class ChannelDropout(ImageOnlyTransform):
     """Randomly Drop Channels in the input Image.

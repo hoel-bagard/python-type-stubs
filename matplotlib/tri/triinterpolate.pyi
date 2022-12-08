@@ -6,6 +6,7 @@ from matplotlib._typing import *
 from .triangulation import Triangulation
 from .trifinder import TriFinder
 
+
 __all__ = ("TriInterpolator", "LinearTriInterpolator", "CubicTriInterpolator")
 
 class TriInterpolator:

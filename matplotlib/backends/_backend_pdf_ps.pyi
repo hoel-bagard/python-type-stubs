@@ -4,6 +4,7 @@ from matplotlib._typing import *
 from matplotlib.backend_bases import RendererBase
 from matplotlib.font_manager import FontProperties
 
+
 def get_glyphs_subset(fontfile: str, characters: str) -> BytesIO: ...
 
 class CharacterTracker:

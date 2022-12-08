@@ -4,6 +4,7 @@ from ._typing import *
 from .axis import Axis
 from .transforms import Transform
 
+
 class ScaleBase:
     def __init__(self, axis: Axis) -> None: ...
     def get_transform(self) -> Transform: ...

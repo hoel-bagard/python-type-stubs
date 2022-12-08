@@ -1,5 +1,6 @@
 from enum import Enum
 
+
 class _AutoStringNameEnum(Enum):
     def __hash__(self) -> int: ...
 

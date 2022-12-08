@@ -4,6 +4,7 @@ import numpy as np
 
 from ._typing import *
 
+
 def window_hanning(x): ...
 def window_none(x): ...
 def detrend(

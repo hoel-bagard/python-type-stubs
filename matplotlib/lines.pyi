@@ -5,11 +5,12 @@ from matplotlib.markers import MarkerStyle
 
 from ._enums import CapStyle, JoinStyle
 from ._typing import *
-from .artist import Artist, allow_rasterization
+from .artist import allow_rasterization, Artist
 from .backend_bases import Event, MouseEvent, RendererBase
 from .backends.backend_agg import RendererAgg
 from .path import Path
 from .transforms import Bbox, Transform
+
 
 def segment_hits(cx, cy, x, y, radius): ...
 

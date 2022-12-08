@@ -7,6 +7,7 @@ from typing import Sequence, Union
 import numpy as np
 from albumentations.augmentations.utils import clipped, preserve_shape
 
+
 __all__ = ["blur", "median_blur", "gaussian_blur", "glass_blur"]
 @preserve_shape
 def blur(img: np.ndarray, ksize: int) -> np.ndarray:

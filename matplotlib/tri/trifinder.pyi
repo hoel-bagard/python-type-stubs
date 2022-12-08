@@ -3,6 +3,7 @@ from matplotlib._typing import *
 
 from .triangulation import Triangulation
 
+
 class TriFinder:
     def __init__(self, triangulation: Triangulation) -> None: ...
 

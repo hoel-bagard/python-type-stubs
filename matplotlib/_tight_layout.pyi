@@ -5,6 +5,7 @@ from .backend_bases import RendererBase
 from .figure import Figure
 from .gridspec import SubplotSpec
 
+
 def auto_adjust_subplotpars(
     fig,
     renderer,

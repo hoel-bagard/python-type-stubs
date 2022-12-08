@@ -8,6 +8,7 @@ import numpy as np
 
 from ...core.transforms_interface import DualTransform
 
+
 __all__ = ["GridDropout"]
 class GridDropout(DualTransform):
     """GridDropout, drops out rectangular regions of an image and the corresponding mask in a grid fashion.

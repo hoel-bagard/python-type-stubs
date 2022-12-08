@@ -6,6 +6,7 @@ import numpy.typing as npt
 from .coco import COCO
 from .coco_types import EvaluationResult
 
+
 T_IOU: TypeAlias = Literal["segm", "bbox", "keypoints"]
 
 

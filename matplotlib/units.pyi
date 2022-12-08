@@ -5,6 +5,7 @@ from ._typing import *
 from .axis import Axis
 from .ticker import Formatter, Locator
 
+
 class ConversionError(TypeError): ...
 
 class AxisInfo:

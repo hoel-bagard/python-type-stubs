@@ -7,6 +7,7 @@ from matplotlib.backend_bases import NonGuiException
 
 from .figure import Figure
 
+
 subprocess_creation_flags = ...
 
 def adjusted_figsize(w: float, h: float, dpi: float, n: int) -> tuple[float, float]: ...

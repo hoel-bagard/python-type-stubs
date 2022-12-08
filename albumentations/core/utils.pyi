@@ -7,6 +7,7 @@ from typing import Any, Dict, Optional, Sequence, Tuple
 
 from .serialization import Serializable
 
+
 def get_shape(img: Any) -> Tuple[int, int]:
     ...
 

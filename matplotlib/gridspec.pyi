@@ -4,6 +4,7 @@ from ._typing import *
 from .backend_bases import RendererBase
 from .figure import Figure, FigureBase, SubplotParams
 
+
 class GridSpecBase:
     def __init__(
         self,
