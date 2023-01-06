@@ -103,6 +103,10 @@ def threshold(src: npt.NDArray[TImg], thresh: float, maxval: float, type: int, d
 def UMat(img: npt.NDArray[TImg]) ->  npt.NDArray[TImg]:
     ...
 
+def vconcat(src: tuple[npt.NDArray[TImg], ...], dts: npt.NDArray[TImg] = ...) -> npt.NDArray[TImg]:
+    'vconcat(src[, dst]) -> dst\n.   @overload\n.    @code{.cpp}\n.       std::vector<cv::Mat> matrices = { cv::Mat(1, 4, CV_8UC1, cv::Scalar(1)),\n.                                         cv::Mat(1, 4, CV_8UC1, cv::Scalar(2)),\n.                                         cv::Mat(1, 4, CV_8UC1, cv::Scalar(3)),};\n.   \n.       cv::Mat out;\n.       cv::vconcat( matrices, out );\n.       //out:\n.       //[1,   1,   1,   1;\n.       // 2,   2,   2,   2;\n.       // 3,   3,   3,   3]\n.    @endcode\n.    @param src input array or vector of matrices. all of the matrices must have the same number of cols and the same depth\n.    @param dst output array. It has the same number of cols and depth as the src, and the sum of rows of the src.\n.   same depth.'
+    ...
+
 def waitKey(delay: int =...) -> int:
     'waitKey([, delay]) -> retval\n.   @brief Waits for a pressed key.\n.   \n.   The function waitKey waits for a key event infinitely (when \\f$\\texttt{delay}\\leq 0\\f$ ) or for delay\n.   milliseconds, when it is positive. Since the OS has a minimum time between switching threads, the\n.   function will not wait exactly delay ms, it will wait at least delay ms, depending on what else is\n.   running on your computer at that time. It returns the code of the pressed key or -1 if no key was\n.   pressed before the specified time had elapsed.\n.   \n.   @note\n.   \n.   This function is the only method in HighGUI that can fetch and handle events, so it needs to be\n.   called periodically for normal event processing unless HighGUI is used within an environment that\n.   takes care of event processing.\n.   \n.   @note\n.   \n.   The function only works if there is at least one HighGUI window created and the window is active.\n.   If there are several HighGUI windows, any of them can be active.\n.   \n.   @param delay Delay in milliseconds. 0 is the special value that means "forever".'
     ...
