@@ -43,6 +43,35 @@ IMREAD_REDUCED_GRAYSCALE_8: int  # If set, always convert image to the single ch
 IMREAD_REDUCED_COLOR_8: int  # If set, always convert image to the 3 channel BGR color image and the image size reduced 1/8.
 IMREAD_IGNORE_ORIENTATION: int  # If set, do not rotate the image according to EXIF's orientation flag.
 
+# Imwrite flags.
+IMWRITE_JPEG_QUALITY: int  # For JPEG, it can be a quality from 0 to 100 (the higher is the better). Default value is 95.
+IMWRITE_JPEG_PROGRESSIVE: int  # Enable JPEG features, 0 or 1, default is False.
+IMWRITE_JPEG_OPTIMIZE: int  # Enable JPEG features, 0 or 1, default is False.
+IMWRITE_JPEG_RST_INTERVAL: int  # JPEG restart interval, 0 - 65535, default is 0 - no restart.
+IMWRITE_JPEG_LUMA_QUALITY: int  # Separate luma quality level, 0 - 100, default is -1 - don't use.
+IMWRITE_JPEG_CHROMA_QUALITY: int  # Separate chroma quality level, 0 - 100, default is -1 - don't use.
+IMWRITE_JPEG_SAMPLING_FACTOR: int  # For JPEG, set sampling factor. See cv::ImwriteJPEGSamplingFactorParams.
+IMWRITE_PNG_COMPRESSION: int  # For PNG, it can be the compression level from 0 to 9. A higher value means a smaller size and longer compression time. If specified, strategy is changed to IMWRITE_PNG_STRATEGY_DEFAULT (Z_DEFAULT_STRATEGY). Default value is 1 (best speed setting).
+IMWRITE_PNG_STRATEGY: int  # One of cv::ImwritePNGFlags, default is IMWRITE_PNG_STRATEGY_RLE.
+IMWRITE_PNG_BILEVEL: int  # Binary level PNG, 0 or 1, default is 0.
+IMWRITE_PXM_BINARY: int  # For PPM, PGM, or PBM, it can be a binary format flag, 0 or 1. Default value is 1.
+IMWRITE_EXR_TYPE: int
+IMWRITE_WEBP_QUALITY: int  # override EXR storage type (FLOAT (FP32) is default). For WEBP, it can be a quality from 1 to 100 (the higher is the better). By default (without any parameter) and for quality above 100 the lossless compression is used.
+IMWRITE_HDR_COMPRESSION: int
+IMWRITE_PAM_TUPLETYPE: int  # specify HDR compression. For PAM, sets the TUPLETYPE field to the corresponding string value that is defined for the format
+IMWRITE_TIFF_RESUNIT: int  # For TIFF, use to specify which DPI resolution unit to set; see libtiff documentation for valid values.
+IMWRITE_TIFF_XDPI: int  # For TIFF, use to specify the X direction DPI.
+IMWRITE_TIFF_YDPI: int  # For TIFF, use to specify the Y direction DPI.
+IMWRITE_TIFF_COMPRESSION: int  # For TIFF, use to specify the image compression scheme. See libtiff for integer constants corresponding to compression formats. Note, for images whose depth is CV_32F, only libtiff's SGILOG compression scheme is used. For other supported depths, the compression scheme can be specified by this flag; LZW compression is the default.
+
+# ImwritePAMFlags
+IMWRITE_PAM_FORMAT_NULL: int
+IMWRITE_PAM_FORMAT_BLACKANDWHITE: int
+IMWRITE_PAM_FORMAT_GRAYSCALE: int
+IMWRITE_PAM_FORMAT_GRAYSCALE_ALPHA: int
+IMWRITE_PAM_FORMAT_RGB: int
+IMWRITE_PAM_FORMAT_RGB_ALPHA: int
+
 # InterpolationFlags
 INTER_NEAREST: int  # Nearest neighbor interpolation.
 INTER_LINEAR: int  # Bilinear interpolation.
